@@ -1,24 +1,29 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
+body {
   font-family: "Rubik", sans-serif;
   background-color: whitesmoke;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
 }
 
 header {
   background-color: steelblue;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  justify-content: space-between;
+  padding: 25px;
   color: white;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 header nav ul {
@@ -33,8 +38,14 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 header form input {
@@ -44,9 +55,10 @@ header form input {
 }
 
 header form button {
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-radius: 5px;
-  background-color:darkcyan;
+  border: 1px solid black;
+  background-color: darkcyan;
   color: white;
   cursor: pointer;
 }
@@ -74,7 +86,7 @@ header form button {
   margin: 10px;
 }
 
-#Produtos { 
+#Produtos {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
@@ -97,51 +109,68 @@ header form button {
 
 #Produtos th {
   padding: 15px;
-  background-color: lightgray;
+  background-color: #008c8c;
 }
 
 #Produtos td {
   padding: 35px;
 }
 
+#Contato {
+  margin: 16px;
+}
+
+#Contato h2 {
+  margin-bottom: 30px;
+}
+
 #Contato form input {
-  padding: 35px 0px;
-  padding: 8px 350px;
+  width: 500px;
+  height: 30px;
   border-radius: 8px;
+  margin-bottom: 50px;
   border: 1px solid black;
 }
 
-#Contato form button{
-  padding: 6px 10px;
-  margin: 50px;
+#Contato form button {
+  padding: 8px 12px;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color:darkcyan;
+  background-color: darkcyan;
   color: white;
   cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Contato textarea {
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
 }
 
 footer {
   background-color: steelblue;
   color: white;
   text-align: center;
-  padding: 30px 800px;
-  font-size: 16px;
+  padding: 20px 10px;
+  font-size: 14px;
+}
 
+footer h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.redes {
+  margin-bottom: 10px;
 }
 
 footer a {
   text-decoration: none;
   color: white;
+  margin: 0 5px;
   font-weight: bold;
-}
-
-
-footer ul {
-display: flex;
-justify-content: center;
-gap: 25px;
-}
-
-footer ul li {
-  list-style: none;
 }
